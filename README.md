@@ -1,4 +1,4 @@
-# GestionFactureCommandeCompositeDesignPattern
+# Management Invoice Order Composite Design Pattern
 It is an application of the Composite design pattern for invoice management of an order.
 
 # Design Pattern Composite
