@@ -7,7 +7,7 @@ and allows the client part to handle a single object and a compound object in th
 Consequently, this design pattern helps to isolate membership in an aggregate.
 
 # UML Diagram
-![Class Diagram](https://github.com/Smeud/GestionFactureCommandeCompositeDesignPattern/blob/master/GestionFactureClassDiagramCompositeDesignPattern.png.jpg?raw=true "Title") 
+![Class Diagram](https://github.com/Smeud/GestionFactureCommandeCompositeDesignPattern/blob/master/GestionFactureClassDiagramCompositeDesignPattern.png?raw=true "Title") 
 
 # Simulation
 https://github.com/Smeud/GestionFactureCommandeCompositeDesignPattern/blob/master/SimulationDPComposite.png
