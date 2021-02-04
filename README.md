@@ -6,3 +6,8 @@ This aims to organize the objects in tree structures in order to represent a hie
 and allows the client part to handle a single object and a compound object in the same way. 
 Consequently, this design pattern helps to isolate membership in an aggregate.
 
+# Diagramme UML
+https://github.com/Smeud/GestionFactureCommandeCompositeDesignPattern/blob/master/GestionFactureClassDiagramCompositeDesignPattern.png
+
+# Simulation
+https://github.com/Smeud/GestionFactureCommandeCompositeDesignPattern/blob/master/SimulationDPComposite.png
