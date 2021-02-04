@@ -10,4 +10,4 @@ Consequently, this design pattern helps to isolate membership in an aggregate.
 ![Class Diagram](https://github.com/Smeud/GestionFactureCommandeCompositeDesignPattern/blob/master/GestionFactureClassDiagramCompositeDesignPattern.png?raw=true "Title") 
 
 # Simulation
-https://github.com/Smeud/GestionFactureCommandeCompositeDesignPattern/blob/master/SimulationDPComposite.png
+![Test](https://github.com/Smeud/GestionFactureCommandeCompositeDesignPattern/blob/master/SimulationDPComposite.png?raw=true"Title")
