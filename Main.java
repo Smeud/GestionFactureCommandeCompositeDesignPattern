@@ -1,38 +1,38 @@
 class Main {
   public static void main(String[] args) {
 
-    PrixInitial prixInitial = new PrixInitial(50.00);
+    InitPrice initPrice = new InitPrice(50.00);
     System.out.print("\n"+"Offer price excluding tax : ");
-    System.out.print(prixInitial.getPrix()+"$");
+    System.out.print(initPrice.getPrice()+"$");
 
-    Shipping shipping = new Shipping(6.50);
+    ShippingFees shippingFees = new ShippingFees(6.50);
     System.out.print("\n"+"Shipping fees : ");
-    System.out.print(shipping.getPrix()+"$");
+    System.out.print(shippingFees.getPrice()+"$");
 
-    Tva tva = new Tva(50*10/100);
+    TaxFees tva = new TaxFees(50*10/100);
     System.out.print("\n"+"Tax fees : ");
-    System.out.print(tva.getPrix()+"$");
+    System.out.print(tva.getPrice()+"$");
 
-    Facture facture = new Facture();
-    facture.add(prixInitial);
-    facture.add(shipping);
-    facture.add(tva);
-    System.out.print("\n"+"Total price reduction : ");
-    System.out.println(facture.getPrix()+"$");
+    Invoice invoice = new Invoice();
+    invoice.add(initPrice);
+    invoice.add(shippingFees);
+    invoice.add(tva);
+    System.out.print("\n"+"Total price before discount : ");
+    System.out.println(invoice.getPrice()+"$");
 
     Vouchers voucher = new Vouchers(50*25/100);
     System.out.print("\n"+"Vouchers promotions : ");
-    System.out.print(voucher.getPrixReduit()+"$");
+    System.out.print(voucher.getDiscountPrice()+"$");
 
     Coupons coupon = new Coupons(50*5/100);
     System.out.print("\n"+"Discount coupons : ");
-    System.out.print(coupon.getPrixReduit()+"$");
+    System.out.print(coupon.getDiscountPrice()+"$");
 
-    FactureFinale factureFinale = new FactureFinale();
-    factureFinale.add(voucher);
-    factureFinale.add(coupon);
+    FinalInvoice finalInvoice = new FinalInvoice();
+    finalInvoice.add(voucher);
+    finalInvoice.add(coupon);
     System.out.print("\n"+"Total reduction on the offer : ");
-    System.out.println(factureFinale.getPrixReduit()+"$");
-    System.out.println("\n"+"Total price after discount :"+" "+factureFinale.getTotal(61.5-14.0)+"$");
+    System.out.println(finalInvoice.getDiscountPrice()+"$");
+    System.out.println("\n"+"Total price after discount :"+" "+finalInvoice.getTotal(61.5-14.0)+"$");
   }
 }

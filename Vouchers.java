@@ -1,15 +1,15 @@
-public class Vouchers implements ComportementReduction {
+public class Vouchers implements OrderDiscount {
   // Class properties
-  private double prixReduit;
+  private double discountPrice;
 
   // Class constructor
-  public Vouchers(double prixReduit) {
-    this.prixReduit = prixReduit;
+  public Vouchers(double discountPrice) {
+    this.discountPrice = discountPrice;
   }
   
   // Class getters
   @Override
-  public double getPrixReduit() {
-    return this.prixReduit;
+  public double getDiscountPrice() {
+    return this.discountPrice;
   }
 }
